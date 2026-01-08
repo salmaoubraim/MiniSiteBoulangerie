@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>témoignages</title>
+    <link rel="stylesheet" href="témoignages.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">🍰cake</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="acceuil.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="témoignages.html" class="nav-link">témoignage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<section class="testimonials-section">
+    <h2 class="section-title">Témoignages</h2>
+    <div class="slider-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\people1[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">Aya Hirchi</h3>
+                    <i class="feedback">Ces produits sont incroyables et je n'hésiterais pas à commander à nouveau💯💯 !</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\people2[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">Louis Dupont</h3>
+                    <i class="feedback">Les pains sont toujours frais et croustillants, et les viennoiseries sont délicieuses.</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\people3[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">Olivia Miller</h3>
+                    <i class="feedback">Les gâteaux sont un pur délice !</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\people4[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">Lisa Tom</h3>
+                    <i class="feedback">I have never tasted pastries more delicious than these in my life 😋♥</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\people5[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">LOCAS SMITH</h3>
+                    <i class="feedback">I was pleased with their timely response to the order😊💝</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\PEOPLE7[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">OLIVER LEFEVRE</h3>
+                    <i class="feedback">Bon courage</i>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <img src="c:\Users\Admin\Pictures\Saved Pictures\PEOPLE8[1].jpg" alt="user" class="user-image">
+                    <h3 class="name">LONA BARNARD</h3>
+                    <i class="feedback">Je suis reconnaissante pour ce travail soigné.</i>
+                </div>
+            </div>
+            <!-- Flèches pour navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination (points) -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true, /* Ydour sans fin */
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000, /* Tsawr ybdlo b 3 seconds */
+        },
+        slidesPerView: 3, /* Wahd wahd */
+    });
+</script>
+</body>
+</html>

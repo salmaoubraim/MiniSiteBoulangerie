@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toggleMenu {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#menuList {
+    display: none;
+}
+
+.images-container {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.images-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+    </style>
+    <script>
+        document.getElementById("toggleMenu").addEventListener("click", function () {
+    var menu = document.getElementById("menuList");
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+});
+
+// إظهار الصور عند تمرير الفأرة على القسم
+function showImages(categoryId) {
+    document.getElementById(categoryId).style.display = "flex";
+}
+
+function hideImages(categoryId) {
+    document.getElementById(categoryId).style.display = "none";
+}
+    </script>
+</head>
+<body>
+    <header>
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text">🍰cake</h2>
+        </a>
+        <button id="toggleMenu">Afficher le menu</button> <!-- زر التحكم في القائمة -->
+        <ul class="nav-menu" id="menuList">
+            <li class="nav-item"><a href="acceuil.html" class="nav-link">Accueil</a></li>
+            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="témoignages.html" class="nav-link">Témoignage</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menu-buttons">
+    <button onclick="showCategory('breads')">Breads</button>
+    <button onclick="showCategory('cakes')">Cakes</button>
+    <button onclick="showCategory('viennoiseries')">Viennoiseries</button>
+</div>
+
+<div id="breads" class="image-category">
+    <img src="images/baguette.jpg" alt="Baguette">
+    <img src="images/pain_complet.jpg" alt="Pain Complet">
+</div>
+
+<div id="cakes" class="image-category">
+    <img src="images/cake_choco.jpg" alt="Cake Chocolat">
+    <img src="images/cupcake.jpg" alt="Cupcake">
+</div>
+
+<div id="viennoiseries" class="image-category">
+    <img src="images/croissant.jpg" alt="Croissant">
+    <img src="images/pain_choco.jpg" alt="Pain au Chocolat">
+</div>
+</body>
+</html>
